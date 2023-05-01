@@ -1,0 +1,249 @@
+// COLORS
+$primaryColor: #019DF4
+$rosa: #E63780
+$verde: #5CB615
+$dark: #222
+$lightFont: #fff
+$darkFont: #86888C
+
+// TAMAÑOS
+$miniFont: 12px
+$normalFont: 14px
+$mediumFont: 18px
+$bigFont: 24px
+$superBigFont: 34px
+
+.my-nav 
+    border: 1px solid #ddd
+    .top
+        background-color: #F4F4F3
+        padding: 20px 0
+        .link
+            padding: 0 10px
+    .bottom
+        padding: 15px 0
+        .left
+            .image
+                width: 60px
+                height: 60px
+        .center
+            .link
+                padding: 0 15px
+     
+.promociones
+    background-image: url(/bg.png)
+    background-size: cover
+    background-position: top center
+    padding: 60px 0
+    .content-ejemplo
+        padding: 200px 0
+    .contentBox
+        border-radius: 8px
+        overflow: hidden
+        backdrop-filter: blur(10px)
+        color: $lightFont
+        .my-top
+            .infoBox
+                cursor: pointer
+                background-color: $rosa
+                display: flex
+                align-items: center
+                padding: 20px
+                column-gap: 15px
+                border: .5px solid gray
+                .text
+                    color: $lightFont
+                    font-size: $mediumFont
+            .verde
+                background-color: $verde
+        .titulo
+            color: $lightFont
+            text-align: center
+            font-size: $bigFont
+            padding: 30px 0
+            .cursiva
+                font-family: cursiva
+                color: $lightFont
+                font-size: $superBigFont
+        .iconos
+            width: 60%
+            margin: 10px auto
+            .texto
+                margin-top: 10px
+                color: $lightFont
+        .telefonos
+            display: flex
+            width: 70%
+            margin: 30px auto
+            justify-content: space-between
+            text-align: center
+            .imagen
+                width: 160px
+                .image
+                    width: 100%
+                    height: auto
+            .precio
+                color: $lightFont
+                font-size: $bigFont
+                font-weight: 900
+                margin: 20px 0
+            .boton
+                background-color: $verde
+                display: block
+                width: 100%
+                margin: 10px 0
+                padding: 12px
+                color: $lightFont !important
+                border-radius: 20px
+                font-weight: 900
+        .bottom
+            display: flex
+            justify-content: center
+            align-items: center
+            column-gap: 20px
+            .texto
+                color: $lightFont
+    .aprovecha
+        color: $lightFont
+        text-align: center
+        margin: 40px 0
+        font-size: $bigFont
+        .cursiva
+            font-family: cursiva
+            color: $lightFont
+            font-size: $superBigFont
+    .bancosBox
+        background-color: $rosa
+        border-radius: 20px
+        .bancos
+            padding: 0 100px
+            display: flex
+            justify-content: space-between
+            margin-bottom: 30px
+
+.footer
+    .top
+        text-align: center
+        padding: 30px 0
+        border-bottom: 2px solid #ddd
+    .middle
+        padding: 30px 0
+        border-bottom: 2px solid #ddd
+        .middleImg
+            width: 250px
+            height: auto
+    .bottom
+        padding: 40px 0
+        .columna
+            margin-bottom: 40px
+            .link
+                display: block
+                padding: 4px 0
+            .titulo
+                margin-bottom: 20px
+                font-weight: 900
+    .patrocinadores
+        padding: 20px 0
+        .patrocinadoresImg
+            width: 100%
+            height: auto
+
+.banner-mobile
+    display: none
+
+.telefonos-mobile
+    display: none
+
+.bancos-mobile
+    display: none
+
+.footer-mobile
+    display: none
+
+.my-nav-mobile
+    display: none
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    z-index: 999
+    background-color: white
+    padding: 0 20px
+    .icon1
+        padding-top: 16px
+    .image
+        width: 60px
+        height: auto
+    .icons
+        display: flex
+        justify-content: flex-end
+    .menu-mobile
+        .link
+            display: block
+            padding: 10px
+
+@media (max-width: 1000px) 
+    .my-nav-mobile
+        display: block
+    main
+        padding-top: 60px
+    .my-nav
+        display: none
+
+    .banner-desktop
+        display: none
+
+    .banner-mobile
+        display: block
+
+    .promociones
+        .my-top
+            .text
+                font-size: $miniFont !important
+
+    .iconos
+        width: 90% !important
+        .texto
+            font-size: $miniFont !important
+
+    .telefonos-desktop
+        display: none
+    .telefonos-mobile
+        display: block
+
+    .telefonos
+        display: block !important
+        width: 100% !important
+        .telefono
+            margin-bottom: 60px
+        .imagen
+            width: 60% !important
+            margin: auto !important
+    .contentBox
+        .bottom
+            padding: 20px 30px
+
+    .bancos-desktop
+        display: none
+    .bancos-mobile
+        display: block
+
+    .bancosBox
+        .bancos
+            display: block !important
+            width: 80% !important
+            margin: auto
+            padding: 0 30px !important
+            text-align: center !important
+            margin-bottom: 30px
+
+    .footer-desktop
+        display: none
+    .footer-mobile
+        display: block
+
+    .footer-mobile
+        .link
+            display: block !important
+            padding: 10px !important
+            
