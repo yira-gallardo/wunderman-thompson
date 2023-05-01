@@ -1377,17 +1377,6 @@ export default function Home() {
             </Accordion.Item>
           </Accordion>
         </div>
-        <div className="patrocinadores">
-          <div className="container">
-            <Image
-              src="/footer.jpg"
-              width={2548}
-              height={175}
-              alt="patrocinadores"
-              className="patrocinadoresImg"
-            />
-          </div>
-        </div>
       </footer>
     </>
   );
